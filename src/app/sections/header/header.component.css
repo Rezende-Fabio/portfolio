@@ -75,10 +75,6 @@ nav {
     font-weight: 250 !important;
 }
 
-.list-group-item {
-    position: initial !important;
-}
-
 @media (max-width: 1024px) {
     .nav-list {
         position: absolute;

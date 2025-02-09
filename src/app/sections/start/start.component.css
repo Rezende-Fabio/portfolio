@@ -97,3 +97,47 @@ section#inicio div#arraste i {
     margin-right: 0.7rem;
     font-size: 1.2rem;
 }
+
+@media (max-width: 1024px) {
+    section#inicio {
+        overflow-x: hidden !important;
+    }
+
+    section#sobre {
+        overflow-x: hidden !important;
+    }
+
+    section#inicio .container {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    section#inicio .container .infos {
+        margin-top: 0;
+    }
+
+    section#inicio .container .infos .subtitle {
+        font-size: 20px;
+    }
+
+    section#inicio .container .infos .title {
+        font-size: 70px;
+    }
+
+    section#inicio .container .infos p {
+        font-size: 20px;
+    }
+
+    .socials .social-item {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+}
