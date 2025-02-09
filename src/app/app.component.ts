@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './sections/header/header.component';
 import { StartComponent } from './sections/start/start.component';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
+import { SkillsComponent } from './sections/skills/skills.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, StartComponent, AboutMeComponent],
+  imports: [HeaderComponent, StartComponent, AboutMeComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -23,7 +24,7 @@ export class AppComponent {
   }
 
   private animeScroll() {
-    const windowTop = window.scrollY + window.innerHeight * 0.85;
+    const windowTop = window.scrollY + window.innerHeight * 0.95;
     const elements = this.el.nativeElement.querySelectorAll('[data-anime]');
 
     elements.forEach((element: HTMLElement) => {

@@ -103,10 +103,6 @@ section#inicio div#arraste i {
         overflow-x: hidden !important;
     }
 
-    section#sobre {
-        overflow-x: hidden !important;
-    }
-
     section#inicio .container {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
@@ -118,23 +114,23 @@ section#inicio div#arraste i {
         margin-top: 0;
     }
 
-    section#inicio .container .infos .subtitle {
+    section#inicio .container .infos .initial {
         font-size: 20px;
     }
 
     section#inicio .container .infos .title {
-        font-size: 70px;
+        font-size: 60px;
     }
 
-    section#inicio .container .infos p {
-        font-size: 20px;
+    section#inicio .container .infos .subtitle {
+        font-size: 17px;
     }
 
     .socials .social-item {
-        font-size: 2rem;
-        width: 60px;
-        height: 60px;
-        padding: 10px;
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
     }
 
     #main {

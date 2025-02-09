@@ -16,3 +16,8 @@ section#sobre {
     border-bottom: 1px solid #ffffff;
 }
 
+@media (max-width: 1024px) {
+    section#sobre {
+        overflow-x: hidden !important;
+    }
+}
