@@ -39,7 +39,7 @@ export class HeaderComponent {
     this.navLinks.forEach((link, index) => {
       link.style.animation = link.style.animation
         ? ''
-        : `navLinksFade 0.7s ease forwards ${index / 7 + 0.3}s`;
+        : `navLinksFade 0.7s ease forwards ${index / 4 + 0.5}s`;
     });
   }
 

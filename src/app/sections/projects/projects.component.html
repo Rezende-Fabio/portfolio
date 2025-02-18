@@ -2,67 +2,11 @@
     <div class="container pb-5">
         <h2 class="pb-4">Projetos</h2>
         <div class="grid-container">
-            <div class="project-card" data-anime="up">
-                <img src="assets/images/med_senior_api.png" alt="Project Image">
-                <div class="overlay">
-                    <h2>Med Senior API</h2>
-                    <div class="icons">
-                        <img class="icon" src="assets/icons/typescript.svg" alt="Typescript">
-                        <img class="icon" src="assets/icons/nestjs.svg" alt="NestJs">
-                        <img class="icon" src="assets/icons/prisma.svg" alt="Prisma">
-                        <img class="icon" src="assets/icons/mongo.svg" alt="Mongo">
-                        <img class="icon" src="assets/icons/docker.svg" alt="Docker">
-                    </div>
-                </div>
-                <div class="footer">Ver mais</div>
-            </div>
-            <div class="project-card" data-anime="up">
-                <img src="assets/images/med_senior_web.png" alt="Project Image">
-                <div class="overlay">
-                    <h2>Med Senior Web</h2>
-                    <div class="icons">
-                        <img class="icon" src="assets/icons/typescript.svg" alt="Typescript">
-                        <img class="icon" src="assets/icons/vue.svg" alt="Vue">
-                        <img class="icon" src="assets/icons/css.svg" alt="Css">
-                        <img class="icon" src="assets/icons/docker.svg" alt="Docker">
-                    </div>
-                </div>
-                <div class="footer">Ver mais</div>
-            </div>
-            <div class="project-card" data-anime="up">
-                <img src="assets/images/med_senior_mobile.jpg" alt="Project Image">
-                <div class="overlay">
-                    <h2>Med Senior Mobile</h2>
-                    <div class="icons">
-                        <img class="icon" src="assets/icons/flutter.svg" alt="Flutter">
-                    </div>
-                </div>
-                <div class="footer">Ver mais</div>
-            </div>
-            <div class="project-card" data-anime="up">
-                <img src="assets/images/fruit_market.png" alt="Project Image">
-                <div class="overlay">
-                    <h2>Fruit Market</h2>
-                    <div class="icons">
-                        <img class="icon" src="assets/icons/flutter.svg" alt="Flutter">
-                    </div>
-                </div>
-                <div class="footer">Ver mais</div>
-            </div>
-            <div class="project-card" data-anime="up">
-                <img src="assets/images/snack_spot.png" alt="Project Image">
-                <div class="overlay">
-                    <h2>Snack Spot</h2>
-                    <div class="icons">
-                        <img class="icon" src="assets/icons/csharp.svg" alt="CSharp">
-                        <img class="icon" src="assets/icons/html.svg" alt="Html">
-                        <img class="icon" src="assets/icons/css.svg" alt="Css">
-                        <img class="icon" src="assets/icons/postgres.svg" alt="Postgres">
-                        <img class="icon" src="assets/icons/docker.svg" alt="Docker">
-                    </div>
-                </div>
-                <div class="footer">Ver mais</div>
-            </div>
+            <app-card-project name="Med Senior API" image="assets/images/med_senior_api.png" [stacks]="medSeniorApi"></app-card-project>
+            <app-card-project name="Med Senior Web" image="assets/images/med_senior_web.png" [stacks]="medSeniorWeb"></app-card-project>
+            <app-card-project name="Med Senior Mobile" image="assets/images/med_senior_mobile.jpg" [stacks]="medSeniorMobile"></app-card-project>
+            <app-card-project name="Fruit Market" image="assets/images/fruit_market.png" [stacks]="fruitMarketMobile"></app-card-project>
+            <app-card-project name="Snack Spot" image="assets/images/snack_spot.png" [stacks]="snackSpot"></app-card-project>
         </div>
         <div class="container p-5">
             <ul class="nav justify-content-center d-flex">

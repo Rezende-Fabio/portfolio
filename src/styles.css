@@ -51,6 +51,18 @@ main {
     }
 }
 
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 0%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, -12%, 0);
+    }
+}
+
 
 /* Animações */
 [data-anime] {
@@ -77,4 +89,8 @@ main {
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+[data-anime-card] {
+    opacity: 0;
 }

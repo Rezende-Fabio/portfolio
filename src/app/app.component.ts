@@ -27,13 +27,23 @@ export class AppComponent {
 
   private animeScroll() {
     const windowTop = window.scrollY + window.innerHeight * 0.95;
+    const windowTopCard = window.scrollY + window.innerHeight * 1;
     const elements = this.el.nativeElement.querySelectorAll('[data-anime]');
+    const elementsCard = this.el.nativeElement.querySelectorAll('[data-anime-card]');
 
     elements.forEach((element: HTMLElement) => {
       if (windowTop > element.offsetTop) {
         this.renderer.addClass(element, 'animate');
       } else {
         this.renderer.removeClass(element, 'animate');
+      }
+    });
+
+    elementsCard.forEach((element: HTMLElement, index: number) => {
+      if (windowTopCard > element.offsetTop) {
+        element.style.animation = `cardFade 0.7s ease forwards ${index / 3 + 0.2}s`;
+      } else {
+        element.style.animation = ``;
       }
     });
   }
