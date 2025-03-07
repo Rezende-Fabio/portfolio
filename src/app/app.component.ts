@@ -17,7 +17,36 @@ export class AppComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
   ngAfterViewInit() {
-    this.animeScroll(); // Chama a função no início
+    this.animeScroll();
+    this.highlightActiveMenu();
+  }
+
+  highlightActiveMenu() {
+    const sections = document.querySelectorAll('section');
+    const menuLinks = document.querySelectorAll('nav ul li a');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Remove a classe 'active' de todos os botões do menu
+            menuLinks.forEach((link) => this.renderer.removeClass(link, 'active'));
+
+            // Adiciona a classe ao botão correspondente
+            const id = entry.target.getAttribute('id');
+            const activeLink = document.querySelector(`nav a[href="#${id}"]`);
+            if (activeLink) {
+              this.renderer.addClass(activeLink, 'active');
+            } else {
+              this.renderer.removeClass(activeLink, 'active');
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
   }
 
   @HostListener('window:scroll', ['$event'])
