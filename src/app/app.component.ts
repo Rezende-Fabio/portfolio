@@ -39,12 +39,24 @@ export class AppComponent {
       }
     });
 
-    elementsCard.forEach((element: HTMLElement, index: number) => {
+    var count: number = 0;
+    var temp: number = 0.01;
+    elementsCard.forEach((element: HTMLElement) => {
+      if (count === 3){
+        count = 0;
+        temp = 0.01;
+      }
+
       if (windowTopCard > element.offsetTop) {
-        element.style.animation = `cardFade 0.7s ease forwards ${index / 3 + 0.2}s`;
+        element.style.animation = `cardFade 0.7s ease forwards ${20 * temp}s`;
+        element.classList.add("complete-animation");
       } else {
         element.style.animation = ``;
+        element.classList.remove("complete-animation");
       }
+
+      count += 1;
+      temp += 0.02;
     });
   }
 }
