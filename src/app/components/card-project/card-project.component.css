@@ -12,7 +12,7 @@
     max-width: 800px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
-    border-bottom: 6px solid #ffffff;
+    border-bottom: 6px solid var(--accent-orange);
 }
 
 .project-card .background-img {
@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: var(--primary-orange);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,17 +50,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: var(--primary-orange);
 }
 
 .project-card .icons img {
-    width: 25px;
+    width: 30px;
     margin: 5px;
 }
 
 .project-card .footer {
     position: absolute;
     width: 100%;
-    background: #18273a;
+    background: var(--tertiary-dark);
     color: #ffffff;
     text-align: center;
     padding: 10px;
@@ -72,11 +73,11 @@
 
 .project-card .footer button {
     background-color: #ffffff;
-    color: #18273a;
     border-radius: 15px;
     transition: 0.75s ease-in;
     padding: 5px 15px 5px 15px;
     font-size: 15px;
+    border: none;
 }
 
 
@@ -103,8 +104,7 @@
 
 .project-card:hover .footer button,
 .footer:hover {
-    background-color: #18273a;
-    border: 1px solid #ffffff;
+    background-color: var(--primary-orange);
     color: #ffffff;
     font-size: 17px;
 }

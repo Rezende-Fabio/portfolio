@@ -36,6 +36,7 @@ export class ProjectsComponent {
     { name: 'assets/icons/csharp.svg', image: "CSharp" },
     { name: 'assets/icons/html.svg', image: "Html" },
     { name: 'assets/icons/css.svg', image: "Css" },
+    { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
     { name: 'assets/icons/postgres.svg', image: "Postgres" },
     { name: 'assets/icons/docker.svg', image: "Docker" },
   ];

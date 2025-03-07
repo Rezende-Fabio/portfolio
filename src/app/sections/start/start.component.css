@@ -1,6 +1,6 @@
 section#inicio {
     background:
-        linear-gradient(rgba(4, 4, 14, 0.362), rgb(0, 0, 0, 1)),
+        linear-gradient(rgba(4, 4, 14, 0.362), var(--primary-dark)),
         url("../../../assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,25 +29,29 @@ section#inicio .container {
     align-items: center;
 }
 
-section#inicio .container .infos {
+.infos {
     margin-top: 160px;
 }
 
-section#inicio .container .infos .subtitle {
+.infos .initial {
+    font-size: 25px;
+}
+
+.infos .subtitle {
     margin-bottom: 0;
     font-size: 25px;
     font-weight: 500;
 }
 
-section#inicio .container .infos .title {
+.infos .subtitle .stack {
+    font-weight: bold;
+    color: var(--primary-orange);
+}
+
+.infos .title {
     margin-bottom: 0px;
     font-size: 74px;
     font-weight: bold;
-}
-
-section#inicio .container .infos p {
-    margin-top: -5px;
-    font-size: 22px;
 }
 
 .socials {
@@ -64,8 +68,8 @@ section#inicio .container .infos p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid var(--text-primary);
+    color: var(--text-primary);
     text-align: center;
     line-height: 40px;
     -webkit-transition: all 0.3s;
@@ -75,25 +79,24 @@ section#inicio .container .infos p {
 }
 
 .socials .social-item:hover {
-    background: #ffffff;
-    color: #000000;
+    transform: perspective(400px) translate3d(0px, 0px, 60px);
 }
 
 .text-shadow {
     text-shadow: 4px 4px 10px #000000;
 }
 
-section#inicio div#arraste {
+div#arraste {
     width: 8rem;
 }
 
-section#inicio div#arraste a {
+div#arraste a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
-section#inicio div#arraste i {
-    color: #ffffff;
+div#arraste i {
+    color: var(--text-primary);
     margin-right: 0.7rem;
     font-size: 1.2rem;
 }

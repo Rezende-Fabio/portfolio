@@ -1,7 +1,12 @@
 section#sobre {
-    background: linear-gradient(rgba(4, 4, 14, 0.362), rgba(18, 3, 70, 0.95));
+    background: var(--primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.color-text {
+    font-weight: bold;
+    color: var(--accent-orange);
 }
 
 .list-group-item {

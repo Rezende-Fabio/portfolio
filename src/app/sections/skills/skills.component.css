@@ -1,7 +1,12 @@
 section#habilidades {
-    background: linear-gradient(rgba(18, 3, 70, 0.95), rgba(4, 4, 14, 0.362));
+    background: var(--primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.progress-bar {
+    background-color: var(--accent-orange) !important;
+    font-weight: bold !important;
 }
 
 .line {

@@ -7,7 +7,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #18273a;
+    background-color: var(--secondary-dark);
     height: 3.5rem;
     width: 100vw;
 }
@@ -36,6 +36,25 @@ nav {
 .menu li a {
     text-decoration: none;
     color: #ffffff;
+    transition: ease-in-out 0.3s;
+}
+
+.menu li a .bar{
+    width: 0%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--accent-orange);
+    transition: ease-in-out 0.3s;
+}
+
+.menu li a:hover {
+    color: var(--accent-orange);
+}
+
+.menu li a.active .bar{
+    color: var(--accent-orange);
+    font-weight: bold;
+    width: 100%;
 }
 
 .menu li a i {
@@ -82,7 +101,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 100vh;
-        background-color: #18273a;
+        background-color: var(--secondary-dark);
         flex-direction: column;
         align-items: center;
         justify-content: start;
