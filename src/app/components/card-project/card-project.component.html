@@ -1,0 +1,16 @@
+<div class="project-card" data-anime-card="down">
+    <img class="background-img" [src]="image" alt="Project Image">
+    <div class="overlay">
+        <h2>{{name}}</h2>
+        <div class="icons">
+            @for (stack of stacks; track $index) {
+                <img class="icon" [src]="stack.name" alt="{{stack.name}}">
+            }
+        </div>
+    </div>
+    <div class="footer">
+        <button>
+            Ver mais
+        </button>
+    </div>
+</div>

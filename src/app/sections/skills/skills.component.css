@@ -1,0 +1,17 @@
+section#habilidades {
+    background: var(--primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.progress-bar {
+    background-color: var(--accent-orange) !important;
+    font-weight: bold !important;
+}
+
+.line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

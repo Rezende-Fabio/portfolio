@@ -1,0 +1,28 @@
+section#sobre {
+    background: var(--primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color-text {
+    font-weight: bold;
+    color: var(--accent-orange);
+}
+
+.list-group-item {
+    position: initial !important;
+}
+
+.list {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    border-top: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 1024px) {
+    section#sobre {
+        overflow-x: hidden !important;
+    }
+}
