@@ -41,4 +41,20 @@ export class ProjectsComponent {
     { name: 'assets/icons/docker.svg', image: "Docker" },
   ];
 
+  gef: {name: string, image: string}[] = [
+    { name: 'assets/icons/python.svg', image: "Python" },
+    { name: 'assets/icons/html.svg', image: "Html" },
+    { name: 'assets/icons/css.svg', image: "Css" },
+    { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
+    { name: 'assets/icons/sqlite.svg', image: "SQLite" },
+  ];
+
+  scanawe: {name: string, image: string}[] = [
+    { name: 'assets/icons/python.svg', image: "Python" },
+    { name: 'assets/icons/html.svg', image: "Html" },
+    { name: 'assets/icons/css.svg', image: "Css" },
+    { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
+    { name: 'assets/icons/sqlite.svg', image: "SQLite" },
+  ];
+
 }
