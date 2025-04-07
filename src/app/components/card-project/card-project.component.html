@@ -1,5 +1,9 @@
 <div class="project-card" data-anime-card="down">
-    <img class="background-img" [src]="image" alt="Project Image">
+    @if (mobile) {
+        <img class="background-img mobile" [src]="image" alt="Project Image">
+    } @else {
+        <img class="background-img" [src]="image" alt="Project Image">
+    }
     <div class="overlay">
         <h2>{{name}}</h2>
         <div class="icons">

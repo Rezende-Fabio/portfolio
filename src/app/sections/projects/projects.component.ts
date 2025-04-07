@@ -34,6 +34,7 @@ export class ProjectsComponent {
 
   snackSpot: {name: string, image: string}[] = [
     { name: 'assets/icons/csharp.svg', image: "CSharp" },
+    { name: 'assets/icons/net_framework.svg', image: "Net Framework" },
     { name: 'assets/icons/html.svg', image: "Html" },
     { name: 'assets/icons/css.svg', image: "Css" },
     { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
@@ -43,6 +44,7 @@ export class ProjectsComponent {
 
   gef: {name: string, image: string}[] = [
     { name: 'assets/icons/python.svg', image: "Python" },
+    { name: 'assets/icons/flask.svg', image: "Flask" },
     { name: 'assets/icons/html.svg', image: "Html" },
     { name: 'assets/icons/css.svg', image: "Css" },
     { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
@@ -55,6 +57,10 @@ export class ProjectsComponent {
     { name: 'assets/icons/css.svg', image: "Css" },
     { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
     { name: 'assets/icons/sqlite.svg', image: "SQLite" },
+  ];
+
+  myCarMobile: {name: string, image: string}[] = [
+    { name: 'assets/icons/flutter.svg', image: "Flutter" },
   ];
 
 }
