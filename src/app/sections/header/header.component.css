@@ -7,7 +7,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--blur-dark);
+    background-color: var(--primary-blur-dark);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     height: 3.5rem;
@@ -102,7 +102,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 100vh;
-        background-color: var(--blur-dark);
+        background-color: var(--secondary-blur-dark);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         flex-direction: column;

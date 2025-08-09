@@ -1,5 +1,5 @@
 section#habilidades {
-    background: var(--primary-dark);
+    background-color: var(--secondary-dark);
     background-repeat: no-repeat;
     background-size: cover;
 }
