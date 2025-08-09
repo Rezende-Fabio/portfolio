@@ -1,34 +1,10 @@
 <section id="projetos">
     <div class="container pb-5">
-        <h2 class="pb-4">Projetos</h2>
+        <h2 class="pb-4 pt-5">Projetos</h2>
         <div class="grid-container">
             @for (project of listProjects; track $index) {
-                <app-card-project [name]="project.name" [image]="project.backgroundImage" [stacks]="project.stacks" [mobile]="project.mobile"></app-card-project>
+                <app-card-project (click)="openModalViewProject(project)" [name]="project.name" [image]="project.backgroundImage" [stacks]="project.stacks" [mobile]="project.mobile"></app-card-project>
             }
-        </div>
-        <div class="container p-5">
-            <ul class="nav justify-content-center d-flex">
-                <li class="ms-4">
-                    <a class="text-body-secondary" href="mailto:rezendefabio337@hotmail.com" target="_blank">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                </li>
-                <li class="ms-4">
-                    <a class="text-body-secondary" href="https://www.linkedin.com/in/fabio-rezendee/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="ms-4">
-                    <a class="text-body-secondary" href="https://instagram.com/rezendee_fabio" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="ms-4">
-                    <a class="text-body-secondary" href="https://github.com/Rezende-Fabio" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 </section>
