@@ -98,11 +98,13 @@ nav {
 @media (max-width: 1024px) {
     .nav-list {
         position: absolute;
-        top: 4vh;
+        top: 3.4rem;
         right: 0;
         width: 50vw;
         height: 100vh;
-        background-color: var(--secondary-dark);
+        background-color: var(--blur-dark);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: center;
         justify-content: start;
