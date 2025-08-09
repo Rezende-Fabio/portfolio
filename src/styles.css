@@ -1,7 +1,8 @@
 :root {
     --primary-dark: #121212;
     --secondary-dark: #1E1E1E;
-    --tertiary-dark: #292929; 
+    --tertiary-dark: #292929;
+    --blur-dark: #1e1e1eac; 
 
     --primary-orange: #FF6F00; 
     --secondary-orange: #D35400;
