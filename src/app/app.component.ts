@@ -29,10 +29,8 @@ export class AppComponent {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Remove a classe 'active' de todos os botões do menu
             menuLinks.forEach((link) => this.renderer.removeClass(link, 'active'));
 
-            // Adiciona a classe ao botão correspondente
             const id = entry.target.getAttribute('id');
             const activeLink = document.querySelector(`nav a[href="#${id}"]`);
             if (activeLink) {

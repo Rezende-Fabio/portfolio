@@ -4,6 +4,13 @@ section#habilidades {
     background-size: cover;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
 .progress-bar {
     background-color: var(--accent-orange) !important;
     font-weight: bold !important;
@@ -14,4 +21,42 @@ section#habilidades {
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-orange);
+    box-shadow: 0 4px 6px var(--primary-orange);
+    background-color: rgba(44, 47, 51, 0.6);
+}
+
+.skill-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-percentage-container {
+    display: flex;
+    justify-content: end;
+}
+
+.skill-percentage {
+    font-weight: normal;
+    font-size: 0.9em;
 }
