@@ -1,9 +1,59 @@
 <div class="d-flex justify-content-between">
-    <h2 mat-dialog-title>Informações do Projeto {{ project.name }}</h2>
     <button class="btn-close-modal hover" (click)="closeModal()">
         X
     </button>
-</div>
-<mat-dialog-content class="mat-typography">
+
+    <h2 mat-dialog-title>Informações do Projeto {{ project.name }}</h2>
     
+</div>
+<mat-dialog-content>
+    <div class="modal-container">        
+        <div class="left-panel">
+            <swiper-container speed="10" [pagination]="{ clickable: true }" [navigation]="true" css-mode="true"
+            class="mySwiper">
+                @for (img of project.slideImages; track $index) {
+                    <swiper-slide>
+                        @if (project.mobile) {
+                            <img class="mobile" [src]="img" alt="Slide {{ $index + 1 }}">
+                        } @else {
+                            <img [src]="img" alt="Slide {{ $index + 1 }}">
+                        }
+                        
+                    </swiper-slide>
+                }
+            </swiper-container>
+
+            <div class="stacks mt-1">
+                <span>Tecnólogas:</span>
+                <br>
+                @for (stack of project.stacks; track $index) {
+                    <img class="icon" [src]="stack.image" alt="{{stack.name}}">
+                }
+            </div>
+
+            @if (project.linkProject || project.linkGit) {
+                <div class="links">
+                    @if (project.linkProject) {
+                        <a mat-raised-button color="primary" target="_blank">
+                            Ver Projeto
+                        </a>
+                    }
+
+                    @if (project.linkGit) {
+                        <a mat-raised-button [href]="project.linkGit" color="accent" target="_blank" class="git">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    }
+                </div>
+            }
+            
+        </div>
+
+        <div class="right-panel">
+            <div class="description">
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.description }}</p>
+            </div>
+        </div>
+    </div>
 </mat-dialog-content>

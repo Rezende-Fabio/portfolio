@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CardProjectComponent } from '../../components/card-project/card-project.component';
 import { Project } from '../../models/project';
-import { fruitMarketMobile, gef, medSeniorApi, medSeniorMobile, medSeniorWeb, myCarMobile, scanawe, snackSpot } from '../../data/projects.data';
+import { fruitMarketMobile, medSeniorApi, medSeniorMobile, medSeniorWeb, myCarMobile, scanawe, snackSpot } from '../../data/projects.data';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalProjectComponent } from '../../components/modal-project/modal-project.component';
 
@@ -13,7 +13,6 @@ import { ModalProjectComponent } from '../../components/modal-project/modal-proj
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-
   listProjects: Project[] = [];
 
   constructor(
@@ -26,7 +25,6 @@ export class ProjectsComponent {
     this.listProjects.push(medSeniorMobile);
     this.listProjects.push(fruitMarketMobile);
     this.listProjects.push(snackSpot);
-    this.listProjects.push(gef);
     this.listProjects.push(scanawe);
     this.listProjects.push(myCarMobile);
   }
