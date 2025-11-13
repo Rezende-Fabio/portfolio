@@ -17,17 +17,3 @@ section#projetos {
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
-.text-body-secondary i {
-    font-size: 2.1rem;
-    color: #ffffff;
-    transition: 0.5s;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.text-body-secondary i:hover {
-    color: #000000;
-    background-color: #ffffff;
-    transform: translateY(-5px);
-}

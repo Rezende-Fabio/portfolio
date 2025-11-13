@@ -11,4 +11,5 @@ export class CardProjectComponent {
   @Input() name: string = "";
   @Input() image: string = "";
   @Input() stacks: { name: string; image: string }[] = [];
+  @Input() mobile: boolean = false;
 }

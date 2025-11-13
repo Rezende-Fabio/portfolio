@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { CardProjectComponent } from '../../components/card-project/card-project.component';
+import { Project } from '../../models/project';
+import { fruitMarketMobile, medSeniorApi, medSeniorMobile, medSeniorWeb, myCarMobile, scanawe, snackSpot } from '../../data/projects.data';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalProjectComponent } from '../../components/modal-project/modal-project.component';
 
 @Component({
   selector: 'app-projects',
@@ -9,36 +13,31 @@ import { CardProjectComponent } from '../../components/card-project/card-project
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  medSeniorApi: {name: string, image: string}[] = [
-    { name: 'assets/icons/typescript.svg', image: "Typescript" },
-    { name: 'assets/icons/nestjs.svg', image: "NestJs" },
-    { name: 'assets/icons/prisma.svg', image: "Prisma" },
-    { name: 'assets/icons/mongo.svg', image: "Mongo" },
-    { name: 'assets/icons/docker.svg', image: "Docker" },
-  ];
+  listProjects: Project[] = [];
 
-  medSeniorWeb: {name: string, image: string}[] = [
-    { name: 'assets/icons/typescript.svg', image: "Typescript" },
-    { name: 'assets/icons/vue.svg', image: "Vue" },
-    { name: 'assets/icons/css.svg', image: "Css" },
-    { name: 'assets/icons/docker.svg', image: "Docker" },
-  ];
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
-  medSeniorMobile: {name: string, image: string}[] = [
-    { name: 'assets/icons/flutter.svg', image: "Flutter" },
-  ];
+  ngOnInit(): void {
+    this.listProjects.push(medSeniorApi);
+    this.listProjects.push(medSeniorWeb);
+    this.listProjects.push(medSeniorMobile);
+    this.listProjects.push(fruitMarketMobile);
+    this.listProjects.push(snackSpot);
+    this.listProjects.push(scanawe);
+    this.listProjects.push(myCarMobile);
+  }
 
-  fruitMarketMobile: {name: string, image: string}[] = [
-    { name: 'assets/icons/flutter.svg', image: "Flutter" },
-  ];
-
-  snackSpot: {name: string, image: string}[] = [
-    { name: 'assets/icons/csharp.svg', image: "CSharp" },
-    { name: 'assets/icons/html.svg', image: "Html" },
-    { name: 'assets/icons/css.svg', image: "Css" },
-    { name: 'assets/icons/bootstrap.svg', image: "Bootstrap" },
-    { name: 'assets/icons/postgres.svg', image: "Postgres" },
-    { name: 'assets/icons/docker.svg', image: "Docker" },
-  ];
-
+  openModalViewProject(project: Project) {
+    this.dialog.open(ModalProjectComponent, {
+      height: "78%",
+      maxHeight: "100%",
+      width: '90%',
+      maxWidth: '100%',
+      data: project,
+      enterAnimationDuration: '300ms', 
+      exitAnimationDuration: '300ms'
+    });
+  }
 }
