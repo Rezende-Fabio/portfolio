@@ -47,7 +47,7 @@ export class AppComponent {
     sections.forEach((section) => observer.observe(section));
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', [])
   onScroll() {
     this.animeScroll();
   }

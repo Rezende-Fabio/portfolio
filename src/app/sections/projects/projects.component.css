@@ -1,11 +1,11 @@
-section#projetos {
+section#projects {
     background: var(--primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 1024px) {
-    section#projetos {
+    section#projects {
         overflow-x: hidden !important;
     }
 }
