@@ -237,8 +237,9 @@ export const myFinanceManagerWeb: Project = new Project(
     "assets/images/projects/my_finance_manager_web/my_finance_manager_web.png",
   ],
   "Projeto em Desenvolvimento.",
-  "https://github.com/Rezende-Fabio/mycar-mobile",
-  ""
+  "",
+  "",
+  true
 );
 
 export const myFinanceManagerApi: Project = new Project(
@@ -255,7 +256,8 @@ export const myFinanceManagerApi: Project = new Project(
   ],
   "Projeto em Desenvolvimento.",
   "",
-  ""
+  "",
+  true
 );
 
 export const myCarMobile: Project = new Project(
@@ -270,5 +272,6 @@ export const myCarMobile: Project = new Project(
   ],
   "Projeto em Desenvolvimento.",
   "",
-  ""
+  "",
+  true
 );
