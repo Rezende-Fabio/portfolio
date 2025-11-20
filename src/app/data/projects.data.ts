@@ -223,6 +223,41 @@ export const scanawe: Project = new Project(
   ""
 );
 
+export const myFinanceManagerWeb: Project = new Project(
+  "My FInance Manager Web",
+  "assets/images/projects/my_finance_manager_web/my_finance_manager_web.png",
+  false,
+  [
+    { image: 'assets/icons/angular.svg', name: "Angular" },
+    { image: 'assets/icons/html.svg', name: "Html" },
+    { image: 'assets/icons/css.svg', name: "Css" },
+    { image: 'assets/icons/bootstrap.svg', name: "Bootstrap" },
+  ],
+  [
+    "assets/images/projects/my_finance_manager_web/my_finance_manager_web.png",
+  ],
+  "Projeto em Desenvolvimento.",
+  "https://github.com/Rezende-Fabio/mycar-mobile",
+  ""
+);
+
+export const myFinanceManagerApi: Project = new Project(
+  "My Finance Manager API",
+  "assets/images/projects/my_finance_manager_api/my_finance_manager_api.png",
+  false,
+  [
+    { image: 'assets/icons/csharp.svg', name: "CSharp" },
+    { image: 'assets/icons/net_framework.svg', name: "Net Framework" },
+    { image: 'assets/icons/postgres.svg', name: "Postgres" },
+  ],
+  [
+    "assets/images/projects/my_finance_manager_api/my_finance_manager_api.png",
+  ],
+  "Projeto em Desenvolvimento.",
+  "",
+  ""
+);
+
 export const myCarMobile: Project = new Project(
   "My Car Mobile",
   "assets/images/projects/my_car_mobile/my_car_mobile.jpg",
@@ -234,6 +269,6 @@ export const myCarMobile: Project = new Project(
     "assets/images/projects/my_car_mobile/my_car_mobile.jpg",
   ],
   "Projeto em Desenvolvimento.",
-  "https://github.com/Rezende-Fabio/mycar-mobile",
+  "",
   ""
 );
