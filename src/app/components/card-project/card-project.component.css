@@ -113,3 +113,15 @@
     color: #ffffff;
     font-size: 17px;
 }
+
+.development {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-red);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -11,6 +11,11 @@
                 <img class="icon" [src]="stack.image" alt="{{stack.name}}">
             }
         </div>
+        @if (project?.inDevelopment) {
+            <div class="development">
+                <span class="in-development">Em Desenvolvimento</span>
+            </div>
+        }
     </div>
     <div class="footer">
         <button>
