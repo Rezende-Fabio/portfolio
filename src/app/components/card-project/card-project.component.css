@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+    .project-card .overlay h2 {
+        font-size: 1.3rem;
+    }
+
     .project-card .icons img {
         width: 19px !important; 
         margin: 5px;

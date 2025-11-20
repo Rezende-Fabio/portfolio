@@ -1,6 +1,6 @@
 import { Component, AfterViewInit, HostListener, ElementRef, Renderer2 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './sections/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { StartComponent } from './sections/start/start.component';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { SkillsComponent } from './sections/skills/skills.component';
