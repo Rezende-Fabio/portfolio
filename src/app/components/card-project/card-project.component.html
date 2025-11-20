@@ -1,16 +1,21 @@
 <div class="project-card" data-anime-card="down">
-    @if (mobile) {
-        <img class="background-img mobile" [src]="image" alt="Project Image">
+    @if (project?.mobile) {
+        <img class="background-img mobile" [src]="project?.backgroundImage" alt="Project Image">
     } @else {
-        <img class="background-img" [src]="image" alt="Project Image">
+        <img class="background-img" [src]="project?.backgroundImage" alt="Project Image">
     }
     <div class="overlay">
-        <h2>{{name}}</h2>
+        <h2>{{project?.name}}</h2>
         <div class="icons">
-            @for (stack of stacks; track $index) {
+            @for (stack of project?.stacks; track $index) {
                 <img class="icon" [src]="stack.image" alt="{{stack.name}}">
             }
         </div>
+        @if (project?.inDevelopment) {
+            <div class="development">
+                <span class="in-development">Em Desenvolvimento</span>
+            </div>
+        }
     </div>
     <div class="footer">
         <button>

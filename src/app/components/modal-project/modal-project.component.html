@@ -52,7 +52,15 @@
         <div class="right-panel">
             <div class="description">
                 <h3>{{ project.name }}</h3>
-                <p>{{ project.description }}</p>
+                @if (project.inDevelopment) {
+                    <p class="mt-2">
+                        Este projeto está sendo desenvolvido.  
+                        Volte em breve para ver as novidades!
+                    </p>
+                } @else {
+                    <div [innerHTML]="project.description"></div>
+                }
+                
             </div>
         </div>
     </div>

@@ -1,9 +1,9 @@
-<section id="projetos">
+<section id="projects">
     <div class="container pb-5">
         <h2 class="pb-4 pt-5">Projetos</h2>
         <div class="grid-container">
             @for (project of listProjects; track $index) {
-                <app-card-project (click)="openModalViewProject(project)" [name]="project.name" [image]="project.backgroundImage" [stacks]="project.stacks" [mobile]="project.mobile"></app-card-project>
+                <app-card-project (click)="openModalViewProject(project)" [project]="project"></app-card-project>
             }
         </div>
     </div>

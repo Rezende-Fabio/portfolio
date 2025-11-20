@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+    .project-card .overlay h2 {
+        font-size: 1.3rem;
+    }
+
     .project-card .icons img {
         width: 19px !important; 
         margin: 5px;
@@ -112,4 +116,16 @@
     background-color: var(--primary-orange);
     color: #ffffff;
     font-size: 17px;
+}
+
+.development {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-red);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }

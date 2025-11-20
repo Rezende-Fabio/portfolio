@@ -12,6 +12,7 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     height: 3.5rem;
     width: 100vw;
+    border-bottom: 1px solid var(--accent-orange);
 }
 
 .menu {
